@@ -11,22 +11,23 @@ const CreateInvoice = ({
   handleReferenceNum,
   handleAmount,
   handleStatus,
+  handleSubmit,
 }) => {
   return (
     <div>
-      <h4>Create Invoices</h4>
+      {/* <h4>Create Invoices</h4> */}
       <form>
-        <span>ClientName</span>
+        <label>ClientName</label>
         <input type="text" value={clientName} onChange={handleClientName} />
-        <span>DateCreation</span>
+        <label>DateCreation</label>
         <input type="text" value={dateCreation} onChange={handleDateCreation} />
-        <span>referenceNum</span>
+        <label>referenceNum</label>
         <input type="text" value={referenceNum} onChange={handleReferenceNum} />
-        <span>amount</span>
+        <label>amount</label>
         <input type="text" value={amount} onChange={handleAmount} />
-        <span>status</span>
+        <label>status</label>
         <input type="text" value={status} onChange={handleStatus} />
-        {/* <button onClick={handleSubmit}> Submit</button> */}
+        <button onClick={handleSubmit}> Submit</button>
       </form>
     </div>
   );

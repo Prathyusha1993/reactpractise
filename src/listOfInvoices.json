@@ -10,7 +10,7 @@
     {
         "id" :2,
         "clientName": "Customer 14",
-        "DateCreation": "2/12/2024",
+        "dateCreation": "2/12/2024",
         "referenceNum":"137",
         "amount":"12556",
         "status": "NOT PAID"
@@ -18,7 +18,7 @@
     {
         "id" :3,
         "clientName": "Customer 15",
-        "DateCreation": "2/12/2024",
+        "dateCreation": "2/12/2024",
         "referenceNum":"145",
         "amount":"35674",
         "status": "PAID"
@@ -26,7 +26,7 @@
     {
         "id" :4,
         "clientName": "Customer 16",
-        "DateCreation": "2/12/2024",
+        "dateCreation": "2/12/2024",
         "referenceNum":"345",
         "amount":"12453",
         "status": "PAID"
@@ -34,7 +34,7 @@
     {
         "id" :5,
         "clientName": "Customer 17",
-        "DateCreation": "2/12/2024",
+        "dateCreation": "2/12/2024",
         "referenceNum":"567",
         "amount":"676",
         "status": "PAID"
@@ -42,7 +42,7 @@
     {
         "id" :6,
         "clientName": "Customer 18",
-        "DateCreation": "2/12/2024",
+        "dateCreation": "2/12/2024",
         "referenceNum":"876",
         "amount":"76453",
         "status": "NOT PAID"
@@ -50,7 +50,7 @@
     {
         "id" :7,
         "clientName": "Customer 19",
-        "DateCreation": "2/12/2024",
+        "dateCreation": "2/12/2024",
         "referenceNum":"142",
         "amount":"23457",
         "status": "NOT PAID"

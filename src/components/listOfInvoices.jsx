@@ -6,10 +6,11 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
-import invoices from "../listOfInvoices.json";
+import listInvoices from "../listOfInvoices.json";
 import CreateInvoice from "./createInvoice";
 
 const ListOfInvoices = () => {
+  const [invoices, setInvoies] = useState(listInvoices);
   const [clientName, setClientName] = useState("");
   const [dateCreation, setDateCreation] = useState("");
   const [referenceNum, setReferenceNum] = useState("");
@@ -36,7 +37,36 @@ const ListOfInvoices = () => {
     e.preventDefault();
     setStatus(e.target.value);
   };
-  //   const handleSubmit = () => {};
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const values = {
+      clientName,
+      dateCreation,
+      referenceNum,
+      amount,
+      status,
+    };
+    addRowsToTable(values);
+    clearValuesAfterSubmit();
+  };
+
+  const clearValuesAfterSubmit = () => {
+    setClientName("");
+    setDateCreation("");
+    setReferenceNum("");
+    setAmount("");
+    setStatus("");
+  };
+
+  const addRowsToTable = (data) => {
+    // const totalInvoices = invoices.length;
+    // data.id = totalInvoices + 1;
+    const updatedInvoices = [...invoices];
+    updatedInvoices.push(data);
+    // console.log(updatedInvoices);
+    setInvoies(updatedInvoices);
+  };
 
   return (
     <div>
@@ -53,6 +83,7 @@ const ListOfInvoices = () => {
           handleReferenceNum={handleReferenceNum}
           handleAmount={handleAmount}
           handleStatus={handleStatus}
+          handleSubmit={handleSubmit}
         />
       </div>
       <div>
